@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" href="devchallenges.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="jquery.nice-number.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="jquery.nice-number.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(function() {
+
+      $('input[type="number"]').niceNumber();
+
+    });
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="konten">
+
+
+    <div class="konten-kiri">
+      <h1>Checkout</h1>
+      <h4>Contact Information</h4>
+      <form class="LOGIN" action="index.html" method="post">
+        <label for="email">E-mail</label><br>
+        <div class="kotak">
+          <span class="material-icons">email</span>
+          <input type="email" name="" placeholder="youremail@gmail.com">
+        </div>
+        <label for="phone">Phone</label><br>
+        <div class="kotak">
+          <span class="material-icons">call</span>
+          <input type="tel" id="phone" name="phone" placeholder="+62-8123-456-7890" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}">
+        </div>
+      </form>
+      <h4>Shipping Address</h4>
+      <form class="LOGIN" action="index.html" method="post">
+        <label for="name">Full Name</label>
+        <div class="kotak">
+          <span class="material-icons">account_circle</span>
+          <input type="text" name="nama" value="Rodney Cotton">
+        </div>
+        <label for="address">address</label>
+        <div class="kotak">
+          <span class="material-icons">home</span>
+          <input type="text" name="address" placeholder="Your Address...">
+        </div>
+        <label for="kota">City</label>
+        <div class="kotak">
+          <span class="material-icons">apartment</span>
+          <input type="text" name="kota" placeholder="Your City...">
+        </div>
+        <div class="kotak2">
+          <div class="pembagi">
+            <label for="negara">Country</label>
+            <div class="kotak">
+              <span class="material-icons">language</span>
+              <input list="browsers" name="negara" placeholder="Your Country...">
+              <datalist id="browsers">
+                <option value="Indonesia">
+                <option value="Zimbabwe">
+                <option value="Malaysia">
+                <option value="Timor Leste">
+                <option value="Singapura">
+              </datalist>
+            </div>
+          </div>
+          <div class="pembagi">
+            <label for="Post">Postal Code</label>
+            <div class="kotak">
+              <span class="material-icons">markunread_mailbox</span>
+              <input type="text" name="post" placeholder="Your Postal Code...">
+            </div>
+          </div>
+        </div>
+        <div class="kotak3">
+          <input type="checkbox" name="informasi">
+          <label for="informasi">save this information for The next time</label>
+        </div>
+        <div class="tombol">
+          <button type="submit" name="button">Continue</button>
+        </div>
+      </form>
+    </div>
+    <div class="konten-kanan">
+      <div class="konten-atas">
+        <div class="a">
+          <img src="photo1.png" alt="back-bag">
+        </div>
+        <div class="harga-produk">
+          <label for="backbag">vintage backbag</label><br>
+          <span class="harga">$54.99</span>
+          <span class="diskon">$94.99</span><br><br><br>
+          <input type="number" name="backbag" value="1">
+        </div>
+        <div class="a">
+          <img src="photo2.png" alt="Levi-shoes">
+        </div>
+        <div class="harga-produk">
+          <label for="levi">levi shoes</label><br>
+          <span class="harga">$74.99</span>
+          <span class="diskon">$124.99</span><br><br><br>
+          <input type="number" id="levi" name="levi" value="1">
+        </div>
+      </div>
+      <br>
+      <div class="total-harga">
+        <div class="shipping">
+          <span>Shipping</span>
+          <span>$19</span>
+        </div>
+        <div class="shipping">
+          <span>total</span><span>$148.98</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="kaki">
+    <p>Created By <a href="https://github.com/ardian70">ardian napitupulu</a> - <a href="https://devchallenges.io/">dev challenges</a></p>
+  </div>
+</body>
+
+</html>

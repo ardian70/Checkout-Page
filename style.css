@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-size: 16px;
+  /* Preferred icon size */
+  margin: 18px 9px;
+  color: #828282;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.konten{
+  width:90%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+/* NOTE: konten bagian kiri */
+
+.konten-kiri {
+  width: 50%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4E5150;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+input {
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  margin: 9px;
+  width: 80%;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  color: #4F4F4F;
+  margin: 9px 7px;
+  text-transform: capitalize;
+}
+
+.kotak {
+  display: flex;
+  border: 2px solid #828282;
+  border-radius: 12px;
+  margin: 14px 0;
+}
+
+.kotak2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kotak3 {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.tombol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin: 20px;
+  background: #F2994A;
+  border-radius: 12px;
+  border-color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #FFFFFF;
+  width: 166px;
+  height: 54px;
+  transition: transform 0.4s ease-in-out;
+}
+
+button:hover {
+  color: #F2994A;
+  background-color: #FFFFFF;
+  transform: scale(1.1);
+}
+/* NOTE: konten bagian kanan */
+.konten-kanan{
+  width: 70vh;
+  height: 100%;
+  background: #F2F2F2;
+  border-radius: 12px;
+  padding:2%;
+  margin-top: 9%;
+  color:#F2994A;
+}
+.a{
+  margin: 2% 4%;
+}
+.konten-kanan img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.konten-atas{
+  display: grid;
+  grid-template-columns:50%  1fr;
+  gap:3%;
+}
+.harga-produk{
+  text-align: center;
+}
+.harga-produk button{
+  background: #E0E0E0;
+  border-radius: 4px;
+  border:none;
+  width: 40px;
+  height: 40px;
+  color: #828282;
+  border-radius: 10px;
+  font-size:24px;
+
+}
+input[type="number"]{
+  background-color:#F2F2F2;
+
+}
+
+.total-harga{
+  width:100%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  text-transform: capitalize;
+}
+.shipping{
+  width: 90%;
+  border-top: 3px solid #BDBDBD;
+  display: flex;
+  justify-content: space-between;
+  margin:2% 0;
+}
+.diskon{
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: line-through;
+
+  color: #4E5150;
+
+  transform: rotate(-0.02deg);
+}
+.kaki{
+  text-align: center;
+  background-color: #202020;
+  color: white;
+  height: 100px;
+  padding-top: 1.5%;
+}
+
+a{
+  text-decoration: none;
+  color: cyan;
+  font-weight: bolder;
+}
+@media (max-width:720px) {
+  h1{
+    font-size: 24px;
+  }
+  h4{
+    font-size: 14px;
+  }
+  .konten{
+    display: grid;
+    grid-template-areas: "konten-kanan"
+                          "konten-kiri";
+  }
+  .konten-kanan{
+    grid-area: konten-kanan;
+    margin-top: 0;
+    width: 100%;
+    font-size: 18px;
+
+  }
+  .konten-kiri{
+    grid-area: konten-kiri;
+    width:100%;
+    font-size: 12px;
+
+  }
+.kaki{
+  padding-top: 3%;
+}
+
+}
